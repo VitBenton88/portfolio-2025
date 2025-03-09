@@ -1,12 +1,14 @@
 :root {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Monaco', 'Courier New', monospace;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: darkblue;
 
+  background-color: #f8ffe3;
+  opacity: 0.7;
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #f8ffe3 10px), repeating-linear-gradient(#59ffd955, #59ffd9);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
