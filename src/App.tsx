@@ -31,10 +31,12 @@ function App() {
           <figcaption>Yours truely 👆</figcaption>
         </figure>
       </main>
+
       <aside>
-        <h2>Resources</h2>
+        <h2>Links</h2>
+
         <nav>
-          <ul>
+          <ul id='links'>
             <li>
               <a href='https://github.com/VitBenton88/portfolio-2025' target='_blank'>
                 <img src='/github.svg' alt='Vit Benton’s Personal GitHub' />
@@ -47,6 +49,30 @@ function App() {
             </li>
           </ul>
         </nav>
+
+        <h2>Skills</h2>
+
+        <ul id='skills'>
+          <li>
+            <img src='/javascript.svg' alt='JavaScript Icon' />
+          </li>
+          <li>
+            <img src='/typescript.svg' alt='TypeScript Icon' />
+          </li>
+          <li>
+            <img src='/react.svg' alt='React Icon' />
+          </li>
+          <li>
+            <img src='/vue.svg' alt='Vue Icon' />
+          </li>
+          <li>
+            <img src='/html.svg' alt='HTML5 Icon' />
+          </li>
+          <li>
+            <img src='/css.svg' alt='CSS3 Icon' />
+          </li>
+        </ul>
+
       </aside>
     </>
   )
