@@ -1,5 +1,6 @@
 import './App.css'
-import Picture, { type SourceType, type MediaQueryTypes, type ImageData } from './components/Picture'
+import Picture, { type SourceType, type PictureSource, type MediaQueryTypes, type ImageData } from './components/Picture'
+import { AnchorHTMLAttributes } from 'react';
 
 const fallbackImage: ImageData = {
   alt: 'Vit Benton headshot',
@@ -7,7 +8,7 @@ const fallbackImage: ImageData = {
   src: './headshot-1x.jpg',
 };
 
-const headshotSources = [
+const headshotSources: PictureSource[] = [
   {
     srcset: './headshot-1x.jpg 1x, ./headshot-2x.jpg 2x, ./headshot-3x.jpg 3x, ./headshot-4x.jpg 4x',
     media: '(min-width: 768px)' as MediaQueryTypes,
@@ -17,6 +18,51 @@ const headshotSources = [
     srcset: './headshot-mobile-1x.jpg 1x, ./headshot-mobile-2x.jpg 2x, ./headshot-mobile-3x.jpg 3x, ./headshot-mobile-4x.jpg 4x',
     media: '(max-width: 768px)' as MediaQueryTypes,
     type: 'image/jpeg' as SourceType,
+  },
+];
+
+const skillLogos: ImageData[] = [
+  { src: './javascript.svg', alt: 'JavaScript icon' },
+  { src: './typescript.svg', alt: 'TypeScript icon' },
+  { src: './react.svg', alt: 'React.js icon' },
+  { src: './vue.svg', alt: 'Vue.js icon' },
+  { src: './node.svg', alt: 'Node.js icon' },
+  { src: './php.svg', alt: 'PHP icon' },
+  { src: './html.svg', alt: 'HTML5 icon' },
+  { src: './css.svg', alt: 'CSS3 icon' },
+];
+
+type LinkConfig = {
+  anchor: {
+    href: string;
+    target?: '_blank' | '_self' | '_parent' | '_top';
+  };
+  image: {
+    src: string;
+    alt: string;
+  };
+};
+
+const links: LinkConfig[] = [
+  {
+    anchor: {
+      href: 'https://github.com/VitBenton88/',
+      target: '_blank',
+    },
+    image: {
+      src: './github.svg',
+      alt: 'Vit Benton’s Personal GitHub',
+    },
+  },
+  {
+    anchor: {
+      href: 'https://www.linkedin.com/in/vit-benton/',
+      target: '_blank',
+    },
+    image: {
+      src: './linkedin.svg',
+      alt: 'Vit Benton’s LinkedIn',
+    },
   },
 ];
 
@@ -41,16 +87,13 @@ function App() {
 
           <nav>
             <ul id='links'>
-              <li>
-                <a href='https://github.com/VitBenton88/portfolio-2025' target='_blank'>
-                  <img src='./github.svg' alt='Vit Benton’s Personal GitHub' />
-                </a>
-              </li>
-              <li>
-                <a href='https://www.linkedin.com/in/vit-benton/' target='_blank'>
-                  <img src='./linkedin.svg' alt='Vit Benton’s LinkedIn' />
-                </a>
-              </li>
+              {links.map(({ anchor, image }) => (
+                <li key={anchor.href}>
+                  <a href={anchor.href} target={anchor.target}>
+                    <img src={image.src} alt={image.alt} />
+                  </a>
+                </li>
+              ))}
             </ul>
           </nav>
         </article>
@@ -59,30 +102,11 @@ function App() {
           <h2>Technical Skills</h2>
 
           <ul id='skills'>
-            <li>
-              <img src='./javascript.svg' alt='JavaScript icon' />
-            </li>
-            <li>
-              <img src='./typescript.svg' alt='TypeScript icon' />
-            </li>
-            <li>
-              <img src='./react.svg' alt='React.js icon' />
-            </li>
-            <li>
-              <img src='./vue.svg' alt='Vue.js icon' />
-            </li>
-            <li>
-              <img src='./node.svg' alt='node.js icon' />
-            </li>
-            <li>
-              <img src='./php.svg' alt='pHp icon' />
-            </li>
-            <li>
-              <img src='./html.svg' alt='HTML5 icon' />
-            </li>
-            <li>
-              <img src='./css.svg' alt='CSS3 icon' />
-            </li>
+            {skillLogos.map(({ src, alt }) => (
+              <li key={src}>
+                <img src={src} alt={alt} />
+              </li>
+            ))}
           </ul>
         </article>
 

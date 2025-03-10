@@ -94,6 +94,10 @@ aside ul {
     width: 350px;
   }
 
+  aside {
+    max-width: 60ch;
+  }
+
   #skills {
     max-width: 400px;
   }
