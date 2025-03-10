@@ -56,7 +56,7 @@ function App() {
         </article>
 
         <article>
-          <h2>Skills</h2>
+          <h2>Proficiencies</h2>
 
           <ul id='skills'>
             <li>
@@ -70,6 +70,9 @@ function App() {
             </li>
             <li>
               <img src='./vue.svg' alt='Vue.js icon' />
+            </li>
+            <li>
+              <img src='./node.svg' alt='node.js icon' />
             </li>
             <li>
               <img src='./php.svg' alt='pHp icon' />
