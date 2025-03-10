@@ -54,13 +54,13 @@ function App() {
 
         <ul id='skills'>
           <li>
-            <img src='/javascript.svg' alt='JavaScript.js Icon' />
+            <img src='/javascript.svg' alt='JavaScript Icon' />
           </li>
           <li>
             <img src='/typescript.svg' alt='TypeScript Icon' />
           </li>
           <li>
-            <img src='/react.svg' alt='React Icon' />
+            <img src='/react.svg' alt='React.js Icon' />
           </li>
           <li>
             <img src='/vue.svg' alt='Vue.js Icon' />
