@@ -1,6 +1,5 @@
 import './App.css'
 import Picture, { type SourceType, type PictureSource, type MediaQueryTypes, type ImageData } from './components/Picture'
-import { AnchorHTMLAttributes } from 'react';
 
 const fallbackImage: ImageData = {
   alt: 'Vit Benton headshot',
