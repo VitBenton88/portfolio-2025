@@ -65,7 +65,6 @@ const Picture: React.FC<PictureProps> = ({ classNames, img, sources }): React.Re
         src={img.src}
         srcSet={img.srcset}
         sizes={img.sizes}
-        data-testid='img'
       />
     </picture>
   )
