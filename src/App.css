@@ -94,6 +94,10 @@ aside ul {
     width: 350px;
   }
 
+  #skills {
+    max-width: 400px;
+  }
+
   img.headshot,
   #skills img {
     cursor: zoom-in;
