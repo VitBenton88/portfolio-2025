@@ -41,6 +41,7 @@ export interface ImageData {
 }
 
 interface PictureProps {
+  classNames: string,
   img: ImageData;
   sources?: PictureSource[]
 }
@@ -49,13 +50,14 @@ const mapSources = ({ media, srcset, type }: PictureSource, index: number): Reac
   <source key={index} media={media} srcSet={srcset} type={type} data-testid='source' />
 );
 
-const Picture: React.FC<PictureProps> = ({ img, sources }): React.ReactNode => {
+const Picture: React.FC<PictureProps> = ({ classNames, img, sources }): React.ReactNode => {
 
   return (
     <picture data-testid='picture'>
       {sources?.length ? sources.map(mapSources) : null}
 
       <img
+        className={classNames}
         alt={img.alt}
         height={img.height}
         width={img.width}
