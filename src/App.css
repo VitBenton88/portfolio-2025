@@ -11,7 +11,6 @@ h1 {
 }
 
 .summary {
-  background-color: var(--yellow-color);
   box-shadow: var(--box-shadow);
   border-radius: 15px;
   padding: 1em;
@@ -58,12 +57,7 @@ main ul {
   width: 3.5em;
 }
 
-#links li a {
-  filter: invert(52%) sepia(67%) saturate(280%) hue-rotate(138deg) brightness(89%) contrast(87%);
-}
-
 #links li a:hover {
-  filter: invert(30%) sepia(37%) saturate(857%) hue-rotate(163deg) brightness(92%) contrast(97%);
   transform: scale(1.1);
 }
 
@@ -77,15 +71,6 @@ main ul {
 
 /* Desktop */
 @media (min-width: 768px) {
-  #root {
-    gap: 4em;
-  }
-
-  h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
-  }
-
   main h2 {
     text-align: left;
     text-decoration: underline;
@@ -101,12 +86,6 @@ main ul {
 
   main {
     max-width: 60ch;
-  }
-
-  .summary button:hover {
-    background-color: var(--secondary-color);
-    box-shadow: var(--box-shadow);
-    transform: scale(1.05);
   }
 
   #skills {
@@ -138,18 +117,6 @@ main ul {
 
 /* Mobile */
 @media (max-width: 768px) {
-  #root {
-    flex-direction: column;
-  }
-
-  h1 {
-    font-size: 2.2em;
-  }
-
-  h2 {
-    font-size: 1.3em;
-  }
-
   img.headshot {
     width: 200px;
   }
@@ -163,11 +130,40 @@ main ul {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+  #links li a {
+    filter: invert(79%) sepia(15%) saturate(526%) hue-rotate(110deg) brightness(98%) contrast(90%);
+  }
 
-  /* Disable or reduce animations/transitions */
-  * {
-    animation: none !important;
-    transition: none !important;
+  #links li a:hover {
+    filter: invert(97%) sepia(4%) saturate(1645%) hue-rotate(356deg) brightness(105%) contrast(94%);
+  }
+
+  .summary {
+    background-color: var(--yellow-color);
+  }
+
+  .summary p {
+    color: var(--primary-color);
+  }
+}
+
+/* Light Theme */
+@media (prefers-color-scheme: light) {
+  #links li a {
+    filter: invert(52%) sepia(67%) saturate(280%) hue-rotate(138deg) brightness(89%) contrast(87%);
+  }
+
+  #links li a:hover {
+    filter: invert(30%) sepia(37%) saturate(857%) hue-rotate(163deg) brightness(92%) contrast(97%);
+  }
+
+  .summary {
+    background-color: var(--primary-color);
+  }
+
+  .summary p {
+    color: var(--yellow-color);
   }
 }

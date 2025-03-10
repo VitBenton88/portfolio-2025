@@ -13,10 +13,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: var(--primary-color);
 
-  background-color: var(--yellow-color);
-  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, var(--yellow-color) 10px), repeating-linear-gradient(var(--green-faded-color), var(--green-color));
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -50,7 +47,85 @@ button {
   transition: 0.3s;
 }
 
+button:hover {
+  box-shadow: var(--box-shadow);
+  transform: scale(1.05);
+}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  #root {
+    gap: 4em;
+  }
+
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  #root {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+}
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: var(--primary-color);
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, var(--primary-color) 10px), repeating-linear-gradient(var(--green-faded-color), var(--primary-color));
+    color: var(--yellow-color);
+  }
+
+  button {
+    background-color: var(--primary-color);
+  }
+
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+}
+
+/* Light Theme */
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: var(--yellow-color);
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, var(--yellow-color) 10px), repeating-linear-gradient(var(--green-faded-color), var(--green-color));
+    color: var(--primary-color);
+  }
+
+  button {
+    background-color: var(--yellow-color);
+    color: var(--primary-color);
+  }
+
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+}
+
+/* Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+
+  /* Disable or reduce animations/transitions */
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }
