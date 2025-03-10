@@ -39,12 +39,12 @@ function App() {
           <ul id='links'>
             <li>
               <a href='https://github.com/VitBenton88/portfolio-2025' target='_blank'>
-                <img src='/github.svg' alt='Vit Benton’s Personal GitHub' />
+                <img src='./github.svg' alt='Vit Benton’s Personal GitHub' />
               </a>
             </li>
             <li>
               <a href='https://www.linkedin.com/in/vit-benton/' target='_blank'>
-                <img src='/linkedin.svg' alt='Vit Benton’s LinkedIn' />
+                <img src='./linkedin.svg' alt='Vit Benton’s LinkedIn' />
               </a>
             </li>
           </ul>
@@ -54,22 +54,22 @@ function App() {
 
         <ul id='skills'>
           <li>
-            <img src='/javascript.svg' alt='JavaScript icon' />
+            <img src='./javascript.svg' alt='JavaScript icon' />
           </li>
           <li>
-            <img src='/typescript.svg' alt='TypeScript icon' />
+            <img src='./typescript.svg' alt='TypeScript icon' />
           </li>
           <li>
-            <img src='/react.svg' alt='React.js icon' />
+            <img src='./react.svg' alt='React.js icon' />
           </li>
           <li>
-            <img src='/vue.svg' alt='Vue.js icon' />
+            <img src='./vue.svg' alt='Vue.js icon' />
           </li>
           <li>
-            <img src='/html.svg' alt='HTML5 icon' />
+            <img src='./html.svg' alt='HTML5 icon' />
           </li>
           <li>
-            <img src='/css.svg' alt='CSS3 icon' />
+            <img src='./css.svg' alt='CSS3 icon' />
           </li>
         </ul>
 
