@@ -1,5 +1,5 @@
 import './App.css'
-import Picture, { type SourceType, type ImageData } from "./components/Picture"
+import Picture, { type SourceType, type ImageData } from './components/Picture'
 
 const fallbackImage: ImageData = {
   alt: 'Vit Benton headshot',
@@ -17,12 +17,31 @@ const resolutionSources = [
 function App() {
   return (
     <>
-      <h1>Vit Benton</h1>
-      <h2>Frontend Software Engineer</h2>
-      <figure>
-        <Picture classNames={'headshot'} img={fallbackImage} sources={resolutionSources} />
-        <figcaption>Yours truely 👆</figcaption>
-      </figure>
+      <main>
+        <h1>Vit Benton</h1>
+        <h2>Frontend Software Engineer</h2>
+        <figure>
+          <Picture classNames={'headshot'} img={fallbackImage} sources={resolutionSources} />
+          <figcaption>Yours truely 👆</figcaption>
+        </figure>
+      </main>
+      <aside>
+        <h2>Links</h2>
+        <nav>
+          <ul>
+            <li>
+              <a href='https://github.com/VitBenton88/portfolio-2025' target='_blank'>
+                <img src='/github.svg' alt='Vit Benton’s Personal GitHub' />
+              </a>
+            </li>
+            <li>
+              <a href='https://www.linkedin.com/in/vit-benton/' target='_blank'>
+                <img src='/linkedin.svg' alt='Vit Benton’s LinkedIn' />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
     </>
   )
 }
