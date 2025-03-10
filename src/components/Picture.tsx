@@ -22,7 +22,7 @@ export type MediaQueryTypes =
   | `(aspect-ratio: ${string})`;
 
 // Compound media queries combining multiple conditions
-type MediaQuery = MediaQueryTypes | `${MediaQueryTypes} and ${MediaQueryTypes}`;
+type MediaQuery = MediaQueryTypes | `${MediaQueryTypes} and ${MediaQueryTypes}`
 
 export interface PictureSource {
   srcset?: SrcsetStringType;
@@ -48,7 +48,7 @@ interface PictureProps {
 
 const mapSources = ({ media, srcset, type }: PictureSource, index: number): React.ReactNode => (
   <source key={index} media={media} srcSet={srcset} type={type} data-testid='source' />
-);
+)
 
 const Picture: React.FC<PictureProps> = ({ classNames, img, sources }): React.ReactNode => {
 
@@ -68,7 +68,7 @@ const Picture: React.FC<PictureProps> = ({ classNames, img, sources }): React.Re
         data-testid='img'
       />
     </picture>
-  );
-};
+  )
+}
 
-export default Picture;
+export default Picture
