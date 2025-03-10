@@ -11,8 +11,8 @@ h1 {
 }
 
 p {
-  background-color: #F6F8D5;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  background-color: var(--yellow-color);
+  box-shadow: var(--box-shadow);
   border-radius: 15px;
   padding: 1em;
   text-align: left;
@@ -23,9 +23,9 @@ figure {
 }
 
 img.headshot {
-  border: .75em #98D2C0 solid;
+  border: .75em var(--green-color) solid;
   border-radius: 100%;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  box-shadow: var(--box-shadow);
 }
 
 main {
@@ -109,7 +109,7 @@ main ul {
 
   img.headshot:hover {
     border-width: .25em;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    box-shadow: var(--box-shadow-light);
     margin: 2em 1rem;
     transform: scale(1.2);
   }
