@@ -1,11 +1,16 @@
 import './App.css'
-import Picture, { type SourceType, type PictureSource, type MediaQueryTypes, type ImageData } from './components/Picture'
+import Picture, {
+  type SourceType,
+  type PictureSource,
+  type MediaQueryTypes,
+  type ImageData
+} from './components/Picture'
 
 const fallbackImage: ImageData = {
   alt: 'Vit Benton headshot',
   loadingStrategy: 'lazy',
   src: './headshot-1x.jpg',
-};
+}
 
 const headshotSources: PictureSource[] = [
   {
@@ -18,7 +23,7 @@ const headshotSources: PictureSource[] = [
     media: '(max-width: 768px)' as MediaQueryTypes,
     type: 'image/jpeg' as SourceType,
   },
-];
+]
 
 const skillLogos: ImageData[] = [
   { src: './javascript.svg', alt: 'JavaScript icon' },
@@ -29,7 +34,7 @@ const skillLogos: ImageData[] = [
   { src: './php.svg', alt: 'PHP icon' },
   { src: './html.svg', alt: 'HTML5 icon' },
   { src: './css.svg', alt: 'CSS3 icon' },
-];
+]
 
 type LinkConfig = {
   anchor: {
@@ -40,7 +45,7 @@ type LinkConfig = {
     src: string;
     alt: string;
   };
-};
+}
 
 const links: LinkConfig[] = [
   {
@@ -63,7 +68,7 @@ const links: LinkConfig[] = [
       alt: 'Vit Benton’s LinkedIn',
     },
   },
-];
+]
 
 function App() {
   return (
@@ -112,7 +117,12 @@ function App() {
         <article>
           <h2>Experience</h2>
 
-          <p>Full-stack web developer with a focus on frontend with over 10 years of experience working on the web. I have contributed to large-scale UI projects, tackled state management challenges, and helped modernize frontends by migrating to newer frameworks. <em>As a side-note, I am also looking to relocate out of Florida and find an opportunity in a major tech hub.</em></p>
+          <div className="summary">
+            <p>Full-stack web developer with a focus on frontend with over 10 years of experience working on the web. I have contributed to large-scale UI projects, tackled state management challenges, and helped modernize frontends by migrating to newer frameworks. <em>As a side-note, I am also looking to relocate out of Florida and find an opportunity in a major tech hub.</em></p>
+            <a href="./Vit_Benton_Resume_2025.pdf" download>
+              <button>Download full PDF resume</button>
+            </a>
+          </div>
         </article>
 
       </main >

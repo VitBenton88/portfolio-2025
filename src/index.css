@@ -44,11 +44,7 @@ button {
   font-family: inherit;
   background-color: var(--primary-color);
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-button:hover {
-  border-color: var(--secondary-color);
+  transition: 0.3s;
 }
 
 button:focus,
