@@ -10,11 +10,11 @@ img.headshot {
   border-radius: 100%;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   cursor: zoom-in;
-  transition: .3s ease-in-out;
+  transition: .4s ease-out;
   width: 350px;
 }
 
 img.headshot:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
