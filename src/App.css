@@ -18,6 +18,10 @@ h1 {
   text-align: left;
 }
 
+.summary>* {
+  margin-top: 0;
+}
+
 figure {
   margin: 0;
 }
