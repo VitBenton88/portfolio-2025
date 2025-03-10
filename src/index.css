@@ -7,7 +7,6 @@
   color: darkblue;
 
   background-color: #f8ffe3;
-  opacity: 0.7;
   background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #f8ffe3 10px), repeating-linear-gradient(#59ffd955, #59ffd9);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
