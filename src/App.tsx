@@ -118,7 +118,10 @@ function App() {
           <h2>Experience</h2>
 
           <div className="summary">
-            <p>Full-stack web developer with a focus on frontend with over 10 years of experience working on the web. I have contributed to large-scale UI projects, tackled state management challenges, and helped modernize frontends by migrating to newer frameworks. <em>As a side-note, I am also looking to relocate out of Florida and find an opportunity in a major tech hub.</em></p>
+            <p>Full-stack web developer specializing in <b>frontend development</b>, with over 10 years of experience in web technologies. Extensive expertise in modern JavaScript frameworks and web development practices.</p>
+
+            <p>I have contributed to large-scale UI projects, tackled state management challenges, and helped modernize frontends by migrating to newer frameworks, and maintained automated testing. <em>As a side-note, I am also looking to relocate out of Florida and find an opportunity in a major tech hub .</em></p>
+
             <a href="./Vit_Benton_Resume_2025.pdf" download>
               <button>Download full PDF resume</button>
             </a>
