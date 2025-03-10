@@ -18,9 +18,10 @@ function App() {
   return (
     <>
       <h1>Vit Benton</h1>
+      <h2>Frontend Software Engineer</h2>
       <figure>
-        <Picture img={fallbackImage} sources={resolutionSources} />
-        <figcaption>Your truely 👆</figcaption>
+        <Picture classNames={'headshot'} img={fallbackImage} sources={resolutionSources} />
+        <figcaption>Yours truely 👆</figcaption>
       </figure>
     </>
   )
