@@ -24,8 +24,11 @@ function App() {
   return (
     <>
       <main>
-        <h1>Vit Benton</h1>
-        <h2>Frontend Software Engineer</h2>
+        <header>
+          <h1>Vit Benton</h1>
+          <h2>Frontend Software Engineer</h2>
+        </header>
+
         <figure>
           <Picture classNames={'headshot'} img={fallbackImage} sources={headshotSources} />
           <figcaption>Yours truely 👆</figcaption>
@@ -33,49 +36,55 @@ function App() {
       </main>
 
       <aside>
-        <h2>Links</h2>
+        <article>
+          <h2>Links</h2>
 
-        <nav>
-          <ul id='links'>
+          <nav>
+            <ul id='links'>
+              <li>
+                <a href='https://github.com/VitBenton88/portfolio-2025' target='_blank'>
+                  <img src='./github.svg' alt='Vit Benton’s Personal GitHub' />
+                </a>
+              </li>
+              <li>
+                <a href='https://www.linkedin.com/in/vit-benton/' target='_blank'>
+                  <img src='./linkedin.svg' alt='Vit Benton’s LinkedIn' />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </article>
+
+        <article>
+          <h2>Skills</h2>
+
+          <ul id='skills'>
             <li>
-              <a href='https://github.com/VitBenton88/portfolio-2025' target='_blank'>
-                <img src='./github.svg' alt='Vit Benton’s Personal GitHub' />
-              </a>
+              <img src='./javascript.svg' alt='JavaScript icon' />
             </li>
             <li>
-              <a href='https://www.linkedin.com/in/vit-benton/' target='_blank'>
-                <img src='./linkedin.svg' alt='Vit Benton’s LinkedIn' />
-              </a>
+              <img src='./typescript.svg' alt='TypeScript icon' />
+            </li>
+            <li>
+              <img src='./react.svg' alt='React.js icon' />
+            </li>
+            <li>
+              <img src='./vue.svg' alt='Vue.js icon' />
+            </li>
+            <li>
+              <img src='./html.svg' alt='HTML5 icon' />
+            </li>
+            <li>
+              <img src='./css.svg' alt='CSS3 icon' />
             </li>
           </ul>
-        </nav>
+        </article>
 
-        <h2>Skills</h2>
+        <article>
+          <h2>Experience</h2>
 
-        <ul id='skills'>
-          <li>
-            <img src='./javascript.svg' alt='JavaScript icon' />
-          </li>
-          <li>
-            <img src='./typescript.svg' alt='TypeScript icon' />
-          </li>
-          <li>
-            <img src='./react.svg' alt='React.js icon' />
-          </li>
-          <li>
-            <img src='./vue.svg' alt='Vue.js icon' />
-          </li>
-          <li>
-            <img src='./html.svg' alt='HTML5 icon' />
-          </li>
-          <li>
-            <img src='./css.svg' alt='CSS3 icon' />
-          </li>
-        </ul>
-
-        <h2>Experience</h2>
-
-        <p>Full-stack web developer with a focus on frontend with over 10 years of experience working on the web. I have contributed to large-scale UI projects, tackled state management challenges, and helped modernize frontends by migrating to newer frameworks. <em>As a side-note, I am also looking to relocate out of Florida and find an opportunity in a major tech hub.</em></p>
+          <p>Full-stack web developer with a focus on frontend with over 10 years of experience working on the web. I have contributed to large-scale UI projects, tackled state management challenges, and helped modernize frontends by migrating to newer frameworks. <em>As a side-note, I am also looking to relocate out of Florida and find an opportunity in a major tech hub.</em></p>
+        </article>
 
       </aside >
     </>
