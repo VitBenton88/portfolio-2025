@@ -75,7 +75,7 @@ function App() {
 
         <h2>Experience</h2>
 
-        <p>Full-stack web developer with a focus on frontend with over 10 years of experience working on the web. I have contributed to large-scale UI projects, tackled state management challenges, and helped modernize frontends by migrating to newer frameworks.<em>As a side-note, I am also looking to relocate out of Florida and find an opportunity in a major tech hub.</em></p>
+        <p>Full-stack web developer with a focus on frontend with over 10 years of experience working on the web. I have contributed to large-scale UI projects, tackled state management challenges, and helped modernize frontends by migrating to newer frameworks. <em>As a side-note, I am also looking to relocate out of Florida and find an opportunity in a major tech hub.</em></p>
 
       </aside >
     </>
