@@ -56,7 +56,7 @@ function App() {
         </article>
 
         <article>
-          <h2>Proficiencies</h2>
+          <h2>Technical Skills</h2>
 
           <ul id='skills'>
             <li>
