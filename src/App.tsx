@@ -72,6 +72,9 @@ function App() {
               <img src='./vue.svg' alt='Vue.js icon' />
             </li>
             <li>
+              <img src='./php.svg' alt='pHp icon' />
+            </li>
+            <li>
               <img src='./html.svg' alt='HTML5 icon' />
             </li>
             <li>
