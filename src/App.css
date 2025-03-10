@@ -28,12 +28,12 @@ img.headshot {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
-aside {
+main {
   display: flex;
   flex-direction: column;
 }
 
-aside ul {
+main ul {
   list-style: none;
 }
 
@@ -82,7 +82,7 @@ aside ul {
     line-height: 1.1;
   }
 
-  aside h2 {
+  main h2 {
     text-align: left;
   }
 
@@ -94,7 +94,7 @@ aside ul {
     width: 350px;
   }
 
-  aside {
+  main {
     max-width: 60ch;
   }
 
@@ -139,7 +139,7 @@ aside ul {
     width: 200px;
   }
 
-  aside {
+  main {
     align-items: center;
   }
 

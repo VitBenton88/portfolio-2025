@@ -69,7 +69,7 @@ const links: LinkConfig[] = [
 function App() {
   return (
     <>
-      <main>
+      <aside>
         <header>
           <h1>Vit Benton</h1>
           <h2>Frontend Software Engineer</h2>
@@ -79,9 +79,9 @@ function App() {
           <Picture classNames={'headshot'} img={fallbackImage} sources={headshotSources} />
           <figcaption>Yours truely 👆</figcaption>
         </figure>
-      </main>
+      </aside>
 
-      <aside>
+      <main>
         <article>
           <h2>Links</h2>
 
@@ -116,7 +116,7 @@ function App() {
           <p>Full-stack web developer with a focus on frontend with over 10 years of experience working on the web. I have contributed to large-scale UI projects, tackled state management challenges, and helped modernize frontends by migrating to newer frameworks. <em>As a side-note, I am also looking to relocate out of Florida and find an opportunity in a major tech hub.</em></p>
         </article>
 
-      </aside >
+      </main >
     </>
   )
 }
