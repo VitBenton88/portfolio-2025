@@ -94,10 +94,14 @@ aside ul {
     transform: scale(1.2);
   }
 
+  #links li img,
+  #skills img {
+    transition: transform .4s ease-out;
+  }
+
   #links li img:hover,
   #skills img:hover {
     transform: scale(1.1);
-    transition: .4s ease-out;
   }
 }
 
@@ -108,7 +112,7 @@ aside ul {
   }
 
   h2 {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   img.headshot {
