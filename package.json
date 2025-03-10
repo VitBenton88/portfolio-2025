@@ -3,7 +3,7 @@
   "description": "Vit Benton's personal portfolio website.",
   "homepage": "https://vitbenton88.github.io/portfolio-2025/",
   "private": true,
-  "version": "1.2.3",
+  "version": "1.2.5",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
