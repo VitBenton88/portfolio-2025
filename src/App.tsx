@@ -7,7 +7,7 @@ const fallbackImage: ImageData = {
   src: './headshot-1x.jpg',
 };
 
-const resolutionSources = [
+const headshotSources = [
   {
     srcset: './headshot-1x.jpg 1x, ./headshot-2x.jpg 2x, ./headshot-3x.jpg 3x, ./headshot-4x.jpg 4x',
     type: 'image/jpeg' as SourceType,
@@ -21,7 +21,7 @@ function App() {
         <h1>Vit Benton</h1>
         <h2>Frontend Software Engineer</h2>
         <figure>
-          <Picture classNames={'headshot'} img={fallbackImage} sources={resolutionSources} />
+          <Picture classNames={'headshot'} img={fallbackImage} sources={headshotSources} />
           <figcaption>Yours truely 👆</figcaption>
         </figure>
       </main>
