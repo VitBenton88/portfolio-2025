@@ -1,5 +1,5 @@
 import './App.css'
-import Picture, { type SourceType, type ImageData } from './components/Picture'
+import Picture, { type SourceType, type MediaQueryTypes, type ImageData } from './components/Picture'
 
 const fallbackImage: ImageData = {
   alt: 'Vit Benton headshot',
@@ -10,6 +10,12 @@ const fallbackImage: ImageData = {
 const headshotSources = [
   {
     srcset: './headshot-1x.jpg 1x, ./headshot-2x.jpg 2x, ./headshot-3x.jpg 3x, ./headshot-4x.jpg 4x',
+    media: '(min-width: 768px)' as MediaQueryTypes,
+    type: 'image/jpeg' as SourceType,
+  },
+  {
+    srcset: './headshot-mobile-1x.jpg 1x, ./headshot-mobile-2x.jpg 2x, ./headshot-mobile-3x.jpg 3x, ./headshot-mobile-4x.jpg 4x',
+    media: '(max-width: 768px)' as MediaQueryTypes,
     type: 'image/jpeg' as SourceType,
   },
 ];
@@ -26,7 +32,7 @@ function App() {
         </figure>
       </main>
       <aside>
-        <h2>Links</h2>
+        <h2>Resources</h2>
         <nav>
           <ul>
             <li>
