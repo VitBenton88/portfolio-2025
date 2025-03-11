@@ -95,6 +95,7 @@ button:focus-visible {
 
   button {
     background-color: var(--primary-color);
+    border: 2px solid var(--green-color);
   }
 
   button:hover {
@@ -112,11 +113,12 @@ button:focus-visible {
 
   button {
     background-color: var(--yellow-color);
+    border: 2px solid var(--primary-color);
     color: var(--primary-color);
   }
 
   button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--green-color);
   }
 }
 
