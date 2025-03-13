@@ -50,7 +50,7 @@ const mapSources = ({ media, srcset, type }: PictureSource, index: number): Reac
   <source key={index} media={media} srcSet={srcset} type={type} data-testid='source' />
 )
 
-const Picture: React.FC<PictureProps> = ({ classNames, img, sources }): React.ReactNode => {
+const Picture: React.FC<PictureProps> = ({ classNames, img, sources }) => {
 
   return (
     <picture>
