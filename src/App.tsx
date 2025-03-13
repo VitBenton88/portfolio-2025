@@ -73,7 +73,7 @@ const links: LinkConfig[] = [
 function App() {
   return (
     <>
-      <aside>
+      <aside id='intro'>
         <header>
           <h1>Vit Benton</h1>
           <h2>Frontend Software Engineer</h2>
@@ -86,11 +86,11 @@ function App() {
       </aside>
 
       <main>
-        <article>
+        <article id='links'>
           <h2>Links</h2>
 
           <nav>
-            <ul id='links'>
+            <ul>
               {links.map(({ anchor, image }) => (
                 <li key={anchor.href}>
                   <a href={anchor.href} target={anchor.target}>
@@ -102,10 +102,10 @@ function App() {
           </nav>
         </article>
 
-        <article>
+        <article id='skills'>
           <h2>Technical Skills</h2>
 
-          <ul id='skills'>
+          <ul>
             {skillLogos.map(({ src, alt }) => (
               <li key={src}>
                 <img src={src} alt={alt} />
@@ -114,15 +114,15 @@ function App() {
           </ul>
         </article>
 
-        <article>
+        <article id='experience'>
           <h2>Experience</h2>
 
-          <div className="summary">
+          <div className='summary'>
             <p>Full-stack web developer specializing in <b>frontend development</b>, with over 10 years of experience in web technologies. Extensive expertise in modern JavaScript frameworks and web development practices.</p>
 
             <p>I have contributed to large-scale UI projects, tackled state management challenges, and helped modernize frontends by migrating to newer frameworks, and maintained automated testing. <em>As a side-note, I am also looking to relocate out of Florida and find an opportunity in a major tech hub.</em></p>
 
-            <a href="./Vit_Benton_Resume_2025.pdf" download>
+            <a href='./Vit_Benton_Resume_2025.pdf' download>
               <button>Download full PDF resume</button>
             </a>
           </div>

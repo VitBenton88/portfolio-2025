@@ -45,32 +45,32 @@ main ul {
   list-style: none;
 }
 
-#links,
-#skills {
+#links ul,
+#skills ul {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
   padding: 0;
 }
 
-#links li a,
-#links li img {
+#links ul li a,
+#links ul li img {
   transition: .4s ease-out;
 }
 
-#links li img {
+#links ul li img {
   width: 3.5em;
 }
 
-#links li a:hover {
+#links ul li a:hover {
   transform: scale(1.1);
 }
 
-#skills {
+#skills ul {
   align-items: center;
 }
 
-#skills li img {
+#skills ul li img {
   width: 3.75em
 }
 
@@ -110,22 +110,22 @@ main ul {
     transform: scale(1.2);
   }
 
-  #skills {
+  #skills ul {
     max-width: 400px;
   }
 
   img.headshot,
-  #skills img {
+  #skills ul img {
     cursor: zoom-in;
   }
 
-  #links li img,
-  #skills img {
+  #links ul li img,
+  #skills ul img {
     transition: transform .4s ease-out;
   }
 
-  #links li img:hover,
-  #skills img:hover {
+  #links ul li img:hover,
+  #skills ul img:hover {
     transform: scale(1.1);
   }
 }
@@ -147,18 +147,18 @@ main ul {
     width: 200px;
   }
 
-  #skills {
+  #skills ul {
     justify-content: center;
   }
 }
 
 /* Dark Theme */
 @media (prefers-color-scheme: dark) {
-  #links li a {
+  #links ul li a {
     filter: invert(79%) sepia(15%) saturate(526%) hue-rotate(110deg) brightness(98%) contrast(90%);
   }
 
-  #links li a:hover {
+  #links ul li a:hover {
     filter: invert(97%) sepia(4%) saturate(1645%) hue-rotate(356deg) brightness(105%) contrast(94%);
   }
 
@@ -174,11 +174,11 @@ main ul {
 
 /* Light Theme */
 @media (prefers-color-scheme: light) {
-  #links li a {
+  #links ul li a {
     filter: invert(52%) sepia(67%) saturate(280%) hue-rotate(138deg) brightness(89%) contrast(87%);
   }
 
-  #links li a:hover {
+  #links ul li a:hover {
     filter: invert(30%) sepia(37%) saturate(857%) hue-rotate(163deg) brightness(92%) contrast(97%);
   }
 
