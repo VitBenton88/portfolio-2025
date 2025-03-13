@@ -31,6 +31,11 @@ img.headshot {
   box-shadow: var(--box-shadow);
 }
 
+main,
+aside {
+  opacity: 0;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -71,9 +76,23 @@ main ul {
 
 /* Desktop */
 @media (min-width: 768px) {
+  aside {
+    animation: fadeInRight .4s .3s ease-in forwards;
+    transform: translateX(-1em);
+  }
+
+  main {
+    animation: fadeInLeft .3s .3s ease-in forwards;
+    transform: translateX(1em);
+  }
+
   main h2 {
     text-align: left;
     text-decoration: underline;
+  }
+
+  main {
+    max-width: 60ch;
   }
 
   img.headshot {
@@ -84,8 +103,11 @@ main ul {
     width: 350px;
   }
 
-  main {
-    max-width: 60ch;
+  img.headshot:hover {
+    border-width: .25em;
+    box-shadow: var(--box-shadow-light);
+    margin: 2em 1rem;
+    transform: scale(1.2);
   }
 
   #skills {
@@ -95,13 +117,6 @@ main ul {
   img.headshot,
   #skills img {
     cursor: zoom-in;
-  }
-
-  img.headshot:hover {
-    border-width: .25em;
-    box-shadow: var(--box-shadow-light);
-    margin: 2em 1rem;
-    transform: scale(1.2);
   }
 
   #links li img,
@@ -117,12 +132,19 @@ main ul {
 
 /* Mobile */
 @media (max-width: 768px) {
-  img.headshot {
-    width: 200px;
+  aside {
+    animation: fadeInBottom .4s .3s ease-in forwards;
+    transform: translateY(-1em);
   }
 
   main {
     align-items: center;
+    animation: fadeInTop .3s .3s ease-in forwards;
+    transform: translateY(1em);
+  }
+
+  img.headshot {
+    width: 200px;
   }
 
   #skills {
@@ -167,5 +189,54 @@ main ul {
 
   .summary p {
     color: var(--primary-color);
+  }
+}
+
+/* Animations */
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(-1em);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(1em);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-1em);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(1em);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
