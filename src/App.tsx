@@ -15,7 +15,7 @@ const fallbackImage: ImageData = {
 const headshotSources: PictureSource[] = [
   {
     srcset: './headshot-1x.jpg 1x, ./headshot-2x.jpg 2x, ./headshot-3x.jpg 3x, ./headshot-4x.jpg 4x',
-    media: '(min-width: 768px)' as MediaQueryTypes,
+    media: '(min-width: 769px)' as MediaQueryTypes,
     type: 'image/jpeg' as SourceType,
   },
   {
