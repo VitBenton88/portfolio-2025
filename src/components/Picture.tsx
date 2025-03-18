@@ -54,7 +54,7 @@ const Picture: React.FC<PictureProps> = ({ classNames, img, sources }) => {
 
   return (
     <picture>
-      {sources?.length && sources.map(mapSources)}
+      {!!sources?.length && sources.map(mapSources)}
 
       <img
         className={classNames}
