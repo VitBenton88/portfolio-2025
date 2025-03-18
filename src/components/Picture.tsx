@@ -47,14 +47,14 @@ interface PictureProps {
 }
 
 const mapSources = ({ media, srcset, type }: PictureSource, index: number): React.ReactNode => (
-  <source key={index} media={media} srcSet={srcset} type={type} data-testid='source' />
+  <source key={index} media={media} srcSet={srcset} type={type} />
 )
 
 const Picture: React.FC<PictureProps> = ({ classNames, img, sources }) => {
 
   return (
     <picture>
-      {sources?.length ? sources.map(mapSources) : null}
+      {sources?.length && sources.map(mapSources)}
 
       <img
         className={classNames}
