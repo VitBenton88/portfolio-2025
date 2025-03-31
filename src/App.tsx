@@ -118,7 +118,7 @@ function App() {
           <h2>Experience</h2>
 
           <div className='summary'>
-            <p>Full-stack software engineer specializing in <b>frontend architecture</b>, with over 10 years of experience in web development. Extensive experience in modern JavaScript frameworks and web development practices.</p>
+            <p>Full-stack software engineer specializing in <b>frontend architecture</b>, with over 10 years of experience in web technologies. Extensive experience in modern JavaScript frameworks and web development practices.</p>
 
             <p>I have contributed to large-scale UI projects, tackled state management challenges, and helped modernize frontends by migrating to newer frameworks, and maintained automated testing. <em>As a side-note, I am also looking to relocate out of Florida and find an opportunity in a major tech hub.</em></p>
 
