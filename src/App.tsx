@@ -120,7 +120,7 @@ function App() {
           <div className='summary'>
             <p>Full-stack software engineer specializing in <b>frontend architecture</b>, with over 10 years of experience in web technologies. Extensive experience in modern JavaScript frameworks and web development practices.</p>
 
-            <p>I have contributed to large-scale UI projects, tackled state management challenges, and helped modernize frontends by migrating to newer frameworks, and maintained automated testing. <em>As a side-note, I am also open to relocating for opportunities.</em></p>
+            <p>I have contributed to large-scale UI projects, helped modernize frontends, build fullstack applications, and maintained automated testing. <em>As a side-note, I am open to relocating for opportunities.</em></p>
 
             <a href='./Vit_Benton_Resume_2025.pdf' download>
               <button>Download full PDF resume</button>
