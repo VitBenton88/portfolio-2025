@@ -26,6 +26,7 @@ const headshotSources: PictureSource[] = [
 ]
 
 const skillLogos: ImageData[] = [
+  { src: './claude.svg', alt: 'Claude AI icon' },
   { src: './javascript.svg', alt: 'JavaScript icon' },
   { src: './typescript.svg', alt: 'TypeScript icon' },
   { src: './react.svg', alt: 'React.js icon' },
