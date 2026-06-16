@@ -122,7 +122,7 @@ function App() {
 
             <p>I have contributed to large-scale UI projects, helped modernize frontends, build fullstack applications, and maintained automated testing. <em>As a side-note, I am open to relocating for opportunities.</em></p>
 
-            <a href='./Vit_Benton_Resume_2025.pdf' download>
+            <a href='./Vit_Benton_Resume_2026.pdf' download>
               <button>Download full PDF resume</button>
             </a>
           </div>
